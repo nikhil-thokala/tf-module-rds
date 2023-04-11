@@ -10,7 +10,7 @@ resource "aws_rds_cluster" "main" {
   db_subnet_group_name    = aws_db_subnet_group.main.name
   tags                    = merge(var.tags, { Name = "${var.env}-rds" })
 }
-}
+
 
 resource "aws_db_subnet_group" "main" {
   name       = "${var.env}-rds"
