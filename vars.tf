@@ -4,6 +4,7 @@ variable "tags" {}
 variable "database_name" {
   default = "dummy"
 }
+
 variable "backup_retention_period" {}
 variable "preferred_backup_window" {}
 variable "engine" {}
