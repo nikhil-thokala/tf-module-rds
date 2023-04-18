@@ -59,7 +59,7 @@ resource "aws_db_subnet_group" "main" {
 }
 
 resource "aws_ssm_parameter" "rds_endpoint" {
-  name  = "${var.env}.docdb.endpoint"
+  name  = "${var.env}.rds.endpoint"
   type  = "String"
   value = aws_rds_cluster.main.endpoint
-  }
+}
